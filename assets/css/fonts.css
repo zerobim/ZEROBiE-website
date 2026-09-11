@@ -1,0 +1,10 @@
+/* Self-hosted fonts (SIL Open Font License 1.1 — see assets/fonts/OFL-*.txt).
+   Served from this site; no requests are made to third-party font services. */
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400;font-display:swap;
+  src:url('../fonts/instrument-sans-400.woff') format('woff')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../fonts/instrument-sans-700.woff') format('woff')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;
+  src:url('../fonts/jetbrains-mono-400.woff') format('woff')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../fonts/jetbrains-mono-700.woff') format('woff')}
