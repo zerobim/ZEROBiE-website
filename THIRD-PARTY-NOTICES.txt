@@ -1,4 +1,4 @@
-THIRD-PARTY NOTICES — tobie.io
+THIRD-PARTY NOTICES — zerobie.com
 ================================
 
 This website includes the following third-party components.

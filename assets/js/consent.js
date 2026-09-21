@@ -1,9 +1,9 @@
-/* TOBiE cookie & storage consent — ZERO.BIM s.r.o.
+/* ZEROBiE cookie & storage consent — ZERO.BIM s.r.o.
    ------------------------------------------------------------------------
    What this does today
    - This site sets NO cookies and runs NO analytics, advertising or social
      tracking. The only thing stored is the visitor's own choice, in the
-     browser's localStorage under the key "tobie_consent" (strictly necessary).
+     browser's localStorage under the key "zerobie_consent" (strictly necessary).
    - The choice expires after 6 months, or when CONSENT_VERSION is increased,
      and the banner is shown again.
 
@@ -16,7 +16,7 @@
    ------------------------------------------------------------------------ */
 (function () {
   'use strict';
-  var KEY = 'tobie_consent';
+  var KEY = 'zerobie_consent';
   var CONSENT_VERSION = 1;
   var MAX_AGE_MS = 182 * 24 * 60 * 60 * 1000; // ~6 months
   var CATEGORIES = [
@@ -58,7 +58,7 @@
       s.setAttribute('data-consent-loaded', '1');
       s.parentNode.insertBefore(n, s.nextSibling);
     }
-    try { document.dispatchEvent(new CustomEvent('tobie:consent', { detail: r })); } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent('zerobie:consent', { detail: r })); } catch (e) {}
   }
 
   var root = null, lastFocus = null;
@@ -144,7 +144,7 @@
 
   function open() { build(read(), true); }
 
-  window.tobieConsent = {
+  window.zerobieConsent = {
     open: open,
     get: read,
     reset: function () { try { window.localStorage.removeItem(KEY); } catch (e) {} build(null, false); }
